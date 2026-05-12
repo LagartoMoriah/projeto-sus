@@ -7,14 +7,24 @@ public class Produto {
 	private double valor;
 	private int qtd;
 	private int idunidade;
-	
-	
-	
-	public String toString() {
-		return this.nome +"  Unidades: "+this.qtd+"\n   R$"+this.valor;
-		
+
+	public Produto() {
+
 	}
-	
+
+	public Produto(String nome, String descricao, double valor, int qtd, int idunidade) {
+		super();
+		this.nome = nome;
+		this.descricao = descricao;
+		this.valor = valor;
+		this.qtd = qtd;
+		this.idunidade = idunidade;
+	}
+
+	public String toString() {
+		return this.nome + "  Unidades: " + this.qtd + "\n   R$" + this.valor;
+
+	}
 
 	public String getNome() {
 		return nome;
@@ -63,6 +73,5 @@ public class Produto {
 	public void setIdunidade(int idunidade) {
 		this.idunidade = idunidade;
 	}
-	
 
 }
